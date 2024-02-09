@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var myLines = Lines()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(myLines) { line in
+            Link(line.string, destination: line.url)
         }
         .padding()
     }
