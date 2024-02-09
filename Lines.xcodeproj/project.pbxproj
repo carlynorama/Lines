@@ -199,6 +199,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D24EBD852B76B5900095B9DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6F5292B76A51600F9FBB1 /* AdaptiveLayout.swift */,
+				D2C6F4AE2B767DA300F9FBB1 /* ContentView.swift */,
+				D2C6F5322B76A82500F9FBB1 /* ExtensionInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D2C6F4A02B767DA300F9FBB1 = {
 			isa = PBXGroup;
 			children = (
@@ -336,12 +346,10 @@
 			isa = PBXGroup;
 			children = (
 				D2C6F4AC2B767DA300F9FBB1 /* LinesApp.swift */,
-				D2C6F5292B76A51600F9FBB1 /* AdaptiveLayout.swift */,
+				D24EBD852B76B5900095B9DA /* Views */,
 				D2C6F52F2B76A55200F9FBB1 /* LineAppError.swift */,
 				D2C6F4DA2B7680EC00F9FBB1 /* Lines.swift */,
-				D2C6F4AE2B767DA300F9FBB1 /* ContentView.swift */,
 				D2C6F5242B76A46B00F9FBB1 /* Constants.swift */,
-				D2C6F5322B76A82500F9FBB1 /* ExtensionInfoView.swift */,
 				D2C6F5352B76A8C000F9FBB1 /* ExtensionManager.swift */,
 			);
 			path = Shared;

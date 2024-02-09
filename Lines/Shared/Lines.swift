@@ -29,9 +29,20 @@ struct Line:Identifiable, Hashable {
         self.urlString = tmp
     }
     
+    fileprivate init?(knownFormatString:some StringProtocol) {
+        let split = knownFormatString.split(separator: "|")
+        if split.count != 2 {
+            return nil
+        }
+        self.string = String(split[0])
+        self.urlString = String(split[1])
+    }
+    
     var url:URL {
         URL(string: urlString)!
     }
+    
+
 
 }
 
@@ -64,6 +75,13 @@ struct Lines:RandomAccessCollection, ExpressibleByArrayLiteral {
         }
     }
     
+    mutating
+    func append(possibleLine:String) {
+        if let newLine = Line(knownFormatString: possibleLine) {
+            self.values.append(newLine)
+        }
+    }
+    
 }
 
 
@@ -84,7 +102,6 @@ extension Lines {
 
     @inlinable
     static func makeLines(from fileURL:URL) -> Self? {
-        let contentsData = try? Data(contentsOf: fileURL)
         guard let string = try? String(contentsOf: fileURL) else {
             return nil
         }
@@ -96,8 +113,7 @@ extension Lines {
     @inlinable
     static func makeLineArray(from stringFromFile:String) -> [Line] {
         stringFromFile.split(separator: "\n").compactMap({
-            let split = $0.split(separator: "|")
-            return Line(split[0], from: split[1])
+            Line(knownFormatString: $0)
         })
     }
 }
