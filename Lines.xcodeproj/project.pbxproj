@@ -16,6 +16,44 @@
 		D2C6F4CB2B767DA400F9FBB1 /* LinesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4CA2B767DA400F9FBB1 /* LinesUITestsLaunchTests.swift */; };
 		D2C6F4D92B767E7B00F9FBB1 /* lines.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4D82B767E7B00F9FBB1 /* lines.txt */; };
 		D2C6F4DB2B7680EC00F9FBB1 /* Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4DA2B7680EC00F9FBB1 /* Lines.swift */; };
+		D2C6F4DE2B76909300F9FBB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4AE2B767DA300F9FBB1 /* ContentView.swift */; };
+		D2C6F4DF2B76909300F9FBB1 /* LinesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4AC2B767DA300F9FBB1 /* LinesApp.swift */; };
+		D2C6F4E02B76909300F9FBB1 /* Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4DA2B7680EC00F9FBB1 /* Lines.swift */; };
+		D2C6F4E32B76909300F9FBB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4B42B767DA400F9FBB1 /* Preview Assets.xcassets */; };
+		D2C6F4E42B76909300F9FBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4B02B767DA400F9FBB1 /* Assets.xcassets */; };
+		D2C6F4E52B76909300F9FBB1 /* lines.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4D82B767E7B00F9FBB1 /* lines.txt */; };
+		D2C6F4F42B76913A00F9FBB1 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4F32B76913A00F9FBB1 /* SafariWebExtensionHandler.swift */; };
+		D2C6F4F72B76913A00F9FBB1 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4F62B76913A00F9FBB1 /* _locales */; };
+		D2C6F4F92B76913A00F9FBB1 /* images in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4F82B76913A00F9FBB1 /* images */; };
+		D2C6F4FB2B76913A00F9FBB1 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4FA2B76913A00F9FBB1 /* manifest.json */; };
+		D2C6F4FD2B76913A00F9FBB1 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4FC2B76913A00F9FBB1 /* background.js */; };
+		D2C6F4FF2B76913A00F9FBB1 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4FE2B76913A00F9FBB1 /* content.js */; };
+		D2C6F5012B76913A00F9FBB1 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F5002B76913A00F9FBB1 /* popup.html */; };
+		D2C6F5032B76913A00F9FBB1 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F5022B76913A00F9FBB1 /* popup.css */; };
+		D2C6F5052B76913A00F9FBB1 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F5042B76913A00F9FBB1 /* popup.js */; };
+		D2C6F50A2B76913A00F9FBB1 /* LineGrabber.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D2C6F4F12B76913A00F9FBB1 /* LineGrabber.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2C6F5112B76914500F9FBB1 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4F32B76913A00F9FBB1 /* SafariWebExtensionHandler.swift */; };
+		D2C6F5142B76914500F9FBB1 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4FC2B76913A00F9FBB1 /* background.js */; };
+		D2C6F5152B76914500F9FBB1 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F5022B76913A00F9FBB1 /* popup.css */; };
+		D2C6F5162B76914500F9FBB1 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F5002B76913A00F9FBB1 /* popup.html */; };
+		D2C6F5172B76914500F9FBB1 /* images in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4F82B76913A00F9FBB1 /* images */; };
+		D2C6F5182B76914500F9FBB1 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4FA2B76913A00F9FBB1 /* manifest.json */; };
+		D2C6F5192B76914500F9FBB1 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4F62B76913A00F9FBB1 /* _locales */; };
+		D2C6F51A2B76914500F9FBB1 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4FE2B76913A00F9FBB1 /* content.js */; };
+		D2C6F51B2B76914500F9FBB1 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F5042B76913A00F9FBB1 /* popup.js */; };
+		D2C6F5252B76A46B00F9FBB1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F5242B76A46B00F9FBB1 /* Constants.swift */; };
+		D2C6F52A2B76A51600F9FBB1 /* AdaptiveLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F5292B76A51600F9FBB1 /* AdaptiveLayout.swift */; };
+		D2C6F52B2B76A51600F9FBB1 /* AdaptiveLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F5292B76A51600F9FBB1 /* AdaptiveLayout.swift */; };
+		D2C6F52D2B76A53F00F9FBB1 /* LineGrabberError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F52C2B76A53F00F9FBB1 /* LineGrabberError.swift */; };
+		D2C6F52E2B76A53F00F9FBB1 /* LineGrabberError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F52C2B76A53F00F9FBB1 /* LineGrabberError.swift */; };
+		D2C6F5332B76A82500F9FBB1 /* ExtensionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F5322B76A82500F9FBB1 /* ExtensionInfoView.swift */; };
+		D2C6F5342B76A87100F9FBB1 /* ExtensionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F5322B76A82500F9FBB1 /* ExtensionInfoView.swift */; };
+		D2C6F5362B76A8C000F9FBB1 /* ExtensionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F5352B76A8C000F9FBB1 /* ExtensionManager.swift */; };
+		D2C6F5372B76A8C000F9FBB1 /* ExtensionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F5352B76A8C000F9FBB1 /* ExtensionManager.swift */; };
+		D2C6F5392B76A98D00F9FBB1 /* macExtInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F5382B76A98D00F9FBB1 /* macExtInfoView.swift */; };
+		D2C6F53B2B76A99A00F9FBB1 /* iOSExtInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F53A2B76A99A00F9FBB1 /* iOSExtInfoView.swift */; };
+		D2C6F53C2B76AAAD00F9FBB1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F5242B76A46B00F9FBB1 /* Constants.swift */; };
+		D2C6F53E2B76AE5000F9FBB1 /* LineGrabber.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D2C6F51F2B76914500F9FBB1 /* LineGrabber.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +71,46 @@
 			remoteGlobalIDString = D2C6F4A82B767DA300F9FBB1;
 			remoteInfo = Lines;
 		};
+		D2C6F5082B76913A00F9FBB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2C6F4A12B767DA300F9FBB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2C6F4F02B76913A00F9FBB1;
+			remoteInfo = LineGrabber;
+		};
+		D2C6F53F2B76AE5000F9FBB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2C6F4A12B767DA300F9FBB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2C6F50F2B76914500F9FBB1;
+			remoteInfo = "LineGrabber (iOS)";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2C6F50E2B76913A00F9FBB1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2C6F50A2B76913A00F9FBB1 /* LineGrabber.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C6F5412B76AE5000F9FBB1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2C6F53E2B76AE5000F9FBB1 /* LineGrabber.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D2C6F4A92B767DA300F9FBB1 /* Lines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lines.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +126,31 @@
 		D2C6F4CA2B767DA400F9FBB1 /* LinesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D2C6F4D82B767E7B00F9FBB1 /* lines.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lines.txt; sourceTree = "<group>"; };
 		D2C6F4DA2B7680EC00F9FBB1 /* Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lines.swift; sourceTree = "<group>"; };
+		D2C6F4E92B76909300F9FBB1 /* Lines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lines.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C6F4EC2B7690CE00F9FBB1 /* Lines.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lines.entitlements; sourceTree = "<group>"; };
+		D2C6F4F12B76913A00F9FBB1 /* LineGrabber.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LineGrabber.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C6F4F32B76913A00F9FBB1 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		D2C6F4F62B76913A00F9FBB1 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		D2C6F4F82B76913A00F9FBB1 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		D2C6F4FA2B76913A00F9FBB1 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		D2C6F4FC2B76913A00F9FBB1 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		D2C6F4FE2B76913A00F9FBB1 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		D2C6F5002B76913A00F9FBB1 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		D2C6F5022B76913A00F9FBB1 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		D2C6F5042B76913A00F9FBB1 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		D2C6F5062B76913A00F9FBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C6F5072B76913A00F9FBB1 /* LineGrabber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LineGrabber.entitlements; sourceTree = "<group>"; };
+		D2C6F51F2B76914500F9FBB1 /* LineGrabber.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LineGrabber.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C6F5202B76914600F9FBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C6F5232B76939E00F9FBB1 /* LineGrabber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LineGrabber.entitlements; sourceTree = "<group>"; };
+		D2C6F5242B76A46B00F9FBB1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D2C6F5292B76A51600F9FBB1 /* AdaptiveLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveLayout.swift; sourceTree = "<group>"; };
+		D2C6F52C2B76A53F00F9FBB1 /* LineGrabberError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGrabberError.swift; sourceTree = "<group>"; };
+		D2C6F52F2B76A55200F9FBB1 /* LineAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineAppError.swift; sourceTree = "<group>"; };
+		D2C6F5322B76A82500F9FBB1 /* ExtensionInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionInfoView.swift; sourceTree = "<group>"; };
+		D2C6F5352B76A8C000F9FBB1 /* ExtensionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionManager.swift; sourceTree = "<group>"; };
+		D2C6F5382B76A98D00F9FBB1 /* macExtInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macExtInfoView.swift; sourceTree = "<group>"; };
+		D2C6F53A2B76A99A00F9FBB1 /* iOSExtInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSExtInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +175,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2C6F4E12B76909300F9FBB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C6F4EE2B76913A00F9FBB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C6F5122B76914500F9FBB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,7 +205,9 @@
 				D2C6F4AB2B767DA300F9FBB1 /* Lines */,
 				D2C6F4BD2B767DA400F9FBB1 /* LinesTests */,
 				D2C6F4C72B767DA400F9FBB1 /* LinesUITests */,
+				D2C6F4F22B76913A00F9FBB1 /* LineGrabber */,
 				D2C6F4AA2B767DA300F9FBB1 /* Products */,
+				D2C6F53D2B76AE5000F9FBB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +217,9 @@
 				D2C6F4A92B767DA300F9FBB1 /* Lines.app */,
 				D2C6F4BA2B767DA400F9FBB1 /* LinesTests.xctest */,
 				D2C6F4C42B767DA400F9FBB1 /* LinesUITests.xctest */,
+				D2C6F4E92B76909300F9FBB1 /* Lines.app */,
+				D2C6F4F12B76913A00F9FBB1 /* LineGrabber.appex */,
+				D2C6F51F2B76914500F9FBB1 /* LineGrabber.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +227,11 @@
 		D2C6F4AB2B767DA300F9FBB1 /* Lines */ = {
 			isa = PBXGroup;
 			children = (
+				D2C6F4EB2B7690C700F9FBB1 /* iOS */,
+				D2C6F4EA2B7690B000F9FBB1 /* macOS */,
 				D2C6F4D72B767E4B00F9FBB1 /* Storage */,
-				D2C6F4AC2B767DA300F9FBB1 /* LinesApp.swift */,
-				D2C6F4DA2B7680EC00F9FBB1 /* Lines.swift */,
-				D2C6F4AE2B767DA300F9FBB1 /* ContentView.swift */,
+				D2C6F5302B76A59900F9FBB1 /* Shared */,
 				D2C6F4B02B767DA400F9FBB1 /* Assets.xcassets */,
-				D2C6F4B22B767DA400F9FBB1 /* Lines.entitlements */,
 				D2C6F4B32B767DA400F9FBB1 /* Preview Content */,
 			);
 			path = Lines;
@@ -143,22 +270,117 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		D2C6F4EA2B7690B000F9FBB1 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6F5382B76A98D00F9FBB1 /* macExtInfoView.swift */,
+				D2C6F4B22B767DA400F9FBB1 /* Lines.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		D2C6F4EB2B7690C700F9FBB1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6F53A2B76A99A00F9FBB1 /* iOSExtInfoView.swift */,
+				D2C6F4EC2B7690CE00F9FBB1 /* Lines.entitlements */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D2C6F4F22B76913A00F9FBB1 /* LineGrabber */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6F5312B76A5C600F9FBB1 /* Shared */,
+				D2C6F5222B76917400F9FBB1 /* iOS */,
+				D2C6F5212B76916200F9FBB1 /* macOS */,
+				D2C6F4F52B76913A00F9FBB1 /* Resources */,
+			);
+			path = LineGrabber;
+			sourceTree = "<group>";
+		};
+		D2C6F4F52B76913A00F9FBB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6F4F62B76913A00F9FBB1 /* _locales */,
+				D2C6F4F82B76913A00F9FBB1 /* images */,
+				D2C6F4FA2B76913A00F9FBB1 /* manifest.json */,
+				D2C6F4FC2B76913A00F9FBB1 /* background.js */,
+				D2C6F4FE2B76913A00F9FBB1 /* content.js */,
+				D2C6F5002B76913A00F9FBB1 /* popup.html */,
+				D2C6F5022B76913A00F9FBB1 /* popup.css */,
+				D2C6F5042B76913A00F9FBB1 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2C6F5212B76916200F9FBB1 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6F5072B76913A00F9FBB1 /* LineGrabber.entitlements */,
+				D2C6F5062B76913A00F9FBB1 /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		D2C6F5222B76917400F9FBB1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6F5232B76939E00F9FBB1 /* LineGrabber.entitlements */,
+				D2C6F5202B76914600F9FBB1 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D2C6F5302B76A59900F9FBB1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6F4AC2B767DA300F9FBB1 /* LinesApp.swift */,
+				D2C6F5292B76A51600F9FBB1 /* AdaptiveLayout.swift */,
+				D2C6F52F2B76A55200F9FBB1 /* LineAppError.swift */,
+				D2C6F4DA2B7680EC00F9FBB1 /* Lines.swift */,
+				D2C6F4AE2B767DA300F9FBB1 /* ContentView.swift */,
+				D2C6F5242B76A46B00F9FBB1 /* Constants.swift */,
+				D2C6F5322B76A82500F9FBB1 /* ExtensionInfoView.swift */,
+				D2C6F5352B76A8C000F9FBB1 /* ExtensionManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D2C6F5312B76A5C600F9FBB1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D2C6F52C2B76A53F00F9FBB1 /* LineGrabberError.swift */,
+				D2C6F4F32B76913A00F9FBB1 /* SafariWebExtensionHandler.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D2C6F53D2B76AE5000F9FBB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2C6F4A82B767DA300F9FBB1 /* Lines */ = {
+		D2C6F4A82B767DA300F9FBB1 /* Lines (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2C6F4CE2B767DA400F9FBB1 /* Build configuration list for PBXNativeTarget "Lines" */;
+			buildConfigurationList = D2C6F4CE2B767DA400F9FBB1 /* Build configuration list for PBXNativeTarget "Lines (macOS)" */;
 			buildPhases = (
 				D2C6F4A52B767DA300F9FBB1 /* Sources */,
 				D2C6F4A62B767DA300F9FBB1 /* Frameworks */,
 				D2C6F4A72B767DA300F9FBB1 /* Resources */,
+				D2C6F50E2B76913A00F9FBB1 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D2C6F5092B76913A00F9FBB1 /* PBXTargetDependency */,
 			);
-			name = Lines;
+			name = "Lines (macOS)";
 			productName = Lines;
 			productReference = D2C6F4A92B767DA300F9FBB1 /* Lines.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +421,59 @@
 			productReference = D2C6F4C42B767DA400F9FBB1 /* LinesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D2C6F4DC2B76909300F9FBB1 /* Lines (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C6F4E62B76909300F9FBB1 /* Build configuration list for PBXNativeTarget "Lines (iOS)" */;
+			buildPhases = (
+				D2C6F4DD2B76909300F9FBB1 /* Sources */,
+				D2C6F4E12B76909300F9FBB1 /* Frameworks */,
+				D2C6F4E22B76909300F9FBB1 /* Resources */,
+				D2C6F5412B76AE5000F9FBB1 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2C6F5402B76AE5000F9FBB1 /* PBXTargetDependency */,
+			);
+			name = "Lines (iOS)";
+			productName = Lines;
+			productReference = D2C6F4E92B76909300F9FBB1 /* Lines.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2C6F4F02B76913A00F9FBB1 /* LineGrabber (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C6F50B2B76913A00F9FBB1 /* Build configuration list for PBXNativeTarget "LineGrabber (macOS)" */;
+			buildPhases = (
+				D2C6F4ED2B76913A00F9FBB1 /* Sources */,
+				D2C6F4EE2B76913A00F9FBB1 /* Frameworks */,
+				D2C6F4EF2B76913A00F9FBB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LineGrabber (macOS)";
+			productName = LineGrabber;
+			productReference = D2C6F4F12B76913A00F9FBB1 /* LineGrabber.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D2C6F50F2B76914500F9FBB1 /* LineGrabber (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C6F51C2B76914500F9FBB1 /* Build configuration list for PBXNativeTarget "LineGrabber (iOS)" */;
+			buildPhases = (
+				D2C6F5102B76914500F9FBB1 /* Sources */,
+				D2C6F5122B76914500F9FBB1 /* Frameworks */,
+				D2C6F5132B76914500F9FBB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LineGrabber (iOS)";
+			productName = LineGrabber;
+			productReference = D2C6F51F2B76914500F9FBB1 /* LineGrabber.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -220,6 +495,9 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = D2C6F4A82B767DA300F9FBB1;
 					};
+					D2C6F4F02B76913A00F9FBB1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = D2C6F4A42B767DA300F9FBB1 /* Build configuration list for PBXProject "Lines" */;
@@ -235,9 +513,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2C6F4A82B767DA300F9FBB1 /* Lines */,
+				D2C6F4A82B767DA300F9FBB1 /* Lines (macOS) */,
+				D2C6F4F02B76913A00F9FBB1 /* LineGrabber (macOS) */,
 				D2C6F4B92B767DA400F9FBB1 /* LinesTests */,
 				D2C6F4C32B767DA400F9FBB1 /* LinesUITests */,
+				D2C6F4DC2B76909300F9FBB1 /* Lines (iOS) */,
+				D2C6F50F2B76914500F9FBB1 /* LineGrabber (iOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -267,6 +548,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2C6F4E22B76909300F9FBB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C6F4E32B76909300F9FBB1 /* Preview Assets.xcassets in Resources */,
+				D2C6F4E42B76909300F9FBB1 /* Assets.xcassets in Resources */,
+				D2C6F4E52B76909300F9FBB1 /* lines.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C6F4EF2B76913A00F9FBB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C6F4FD2B76913A00F9FBB1 /* background.js in Resources */,
+				D2C6F5032B76913A00F9FBB1 /* popup.css in Resources */,
+				D2C6F5012B76913A00F9FBB1 /* popup.html in Resources */,
+				D2C6F4F92B76913A00F9FBB1 /* images in Resources */,
+				D2C6F4FB2B76913A00F9FBB1 /* manifest.json in Resources */,
+				D2C6F4F72B76913A00F9FBB1 /* _locales in Resources */,
+				D2C6F4FF2B76913A00F9FBB1 /* content.js in Resources */,
+				D2C6F5052B76913A00F9FBB1 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C6F5132B76914500F9FBB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C6F5142B76914500F9FBB1 /* background.js in Resources */,
+				D2C6F5152B76914500F9FBB1 /* popup.css in Resources */,
+				D2C6F5162B76914500F9FBB1 /* popup.html in Resources */,
+				D2C6F5172B76914500F9FBB1 /* images in Resources */,
+				D2C6F5182B76914500F9FBB1 /* manifest.json in Resources */,
+				D2C6F5192B76914500F9FBB1 /* _locales in Resources */,
+				D2C6F51A2B76914500F9FBB1 /* content.js in Resources */,
+				D2C6F51B2B76914500F9FBB1 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -276,7 +597,12 @@
 			files = (
 				D2C6F4AF2B767DA300F9FBB1 /* ContentView.swift in Sources */,
 				D2C6F4AD2B767DA300F9FBB1 /* LinesApp.swift in Sources */,
+				D2C6F5332B76A82500F9FBB1 /* ExtensionInfoView.swift in Sources */,
+				D2C6F5362B76A8C000F9FBB1 /* ExtensionManager.swift in Sources */,
 				D2C6F4DB2B7680EC00F9FBB1 /* Lines.swift in Sources */,
+				D2C6F52A2B76A51600F9FBB1 /* AdaptiveLayout.swift in Sources */,
+				D2C6F5392B76A98D00F9FBB1 /* macExtInfoView.swift in Sources */,
+				D2C6F5252B76A46B00F9FBB1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,18 +623,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2C6F4DD2B76909300F9FBB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C6F4DE2B76909300F9FBB1 /* ContentView.swift in Sources */,
+				D2C6F4DF2B76909300F9FBB1 /* LinesApp.swift in Sources */,
+				D2C6F4E02B76909300F9FBB1 /* Lines.swift in Sources */,
+				D2C6F5342B76A87100F9FBB1 /* ExtensionInfoView.swift in Sources */,
+				D2C6F52B2B76A51600F9FBB1 /* AdaptiveLayout.swift in Sources */,
+				D2C6F53B2B76A99A00F9FBB1 /* iOSExtInfoView.swift in Sources */,
+				D2C6F5372B76A8C000F9FBB1 /* ExtensionManager.swift in Sources */,
+				D2C6F53C2B76AAAD00F9FBB1 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C6F4ED2B76913A00F9FBB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C6F52D2B76A53F00F9FBB1 /* LineGrabberError.swift in Sources */,
+				D2C6F4F42B76913A00F9FBB1 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C6F5102B76914500F9FBB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C6F52E2B76A53F00F9FBB1 /* LineGrabberError.swift in Sources */,
+				D2C6F5112B76914500F9FBB1 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		D2C6F4BC2B767DA400F9FBB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D2C6F4A82B767DA300F9FBB1 /* Lines */;
+			target = D2C6F4A82B767DA300F9FBB1 /* Lines (macOS) */;
 			targetProxy = D2C6F4BB2B767DA400F9FBB1 /* PBXContainerItemProxy */;
 		};
 		D2C6F4C62B767DA400F9FBB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D2C6F4A82B767DA300F9FBB1 /* Lines */;
+			target = D2C6F4A82B767DA300F9FBB1 /* Lines (macOS) */;
 			targetProxy = D2C6F4C52B767DA400F9FBB1 /* PBXContainerItemProxy */;
+		};
+		D2C6F5092B76913A00F9FBB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2C6F4F02B76913A00F9FBB1 /* LineGrabber (macOS) */;
+			targetProxy = D2C6F5082B76913A00F9FBB1 /* PBXContainerItemProxy */;
+		};
+		D2C6F5402B76AE5000F9FBB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2C6F50F2B76914500F9FBB1 /* LineGrabber (iOS) */;
+			targetProxy = D2C6F53F2B76AE5000F9FBB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -430,9 +799,10 @@
 		D2C6F4CF2B767DA400F9FBB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Lines/Lines.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Lines/macOS/Lines.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lines/Preview Content\"";
@@ -456,21 +826,22 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlynorama.Lines;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Lines;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		D2C6F4D02B767DA400F9FBB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Lines/Lines.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Lines/macOS/Lines.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lines/Preview Content\"";
@@ -494,12 +865,12 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlynorama.Lines;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Lines;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -593,6 +964,218 @@
 			};
 			name = Release;
 		};
+		D2C6F4E72B76909300F9FBB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Lines/iOS/Lines.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lines/Preview Content\"";
+				DEVELOPMENT_TEAM = KH3G9PXA68;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlynorama.Lines;
+				PRODUCT_NAME = Lines;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2C6F4E82B76909300F9FBB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Lines/iOS/Lines.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lines/Preview Content\"";
+				DEVELOPMENT_TEAM = KH3G9PXA68;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlynorama.Lines;
+				PRODUCT_NAME = Lines;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2C6F50C2B76913A00F9FBB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LineGrabber/macOS/LineGrabber.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KH3G9PXA68;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LineGrabber/macOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LineGrabber;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlynorama.Lines.LineGrabber;
+				PRODUCT_NAME = LineGrabber;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D2C6F50D2B76913A00F9FBB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LineGrabber/macOS/LineGrabber.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KH3G9PXA68;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LineGrabber/macOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LineGrabber;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlynorama.Lines.LineGrabber;
+				PRODUCT_NAME = LineGrabber;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D2C6F51D2B76914500F9FBB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LineGrabber/iOS/LineGrabber.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KH3G9PXA68;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LineGrabber/iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LineGrabber;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlynorama.Lines.LineGrabber;
+				PRODUCT_NAME = LineGrabber;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2C6F51E2B76914500F9FBB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LineGrabber/iOS/LineGrabber.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KH3G9PXA68;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LineGrabber/iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LineGrabber;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlynorama.Lines.LineGrabber;
+				PRODUCT_NAME = LineGrabber;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -605,7 +1188,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2C6F4CE2B767DA400F9FBB1 /* Build configuration list for PBXNativeTarget "Lines" */ = {
+		D2C6F4CE2B767DA400F9FBB1 /* Build configuration list for PBXNativeTarget "Lines (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2C6F4CF2B767DA400F9FBB1 /* Debug */,
@@ -628,6 +1211,33 @@
 			buildConfigurations = (
 				D2C6F4D52B767DA400F9FBB1 /* Debug */,
 				D2C6F4D62B767DA400F9FBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C6F4E62B76909300F9FBB1 /* Build configuration list for PBXNativeTarget "Lines (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C6F4E72B76909300F9FBB1 /* Debug */,
+				D2C6F4E82B76909300F9FBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C6F50B2B76913A00F9FBB1 /* Build configuration list for PBXNativeTarget "LineGrabber (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C6F50C2B76913A00F9FBB1 /* Debug */,
+				D2C6F50D2B76913A00F9FBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C6F51C2B76914500F9FBB1 /* Build configuration list for PBXNativeTarget "LineGrabber (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C6F51D2B76914500F9FBB1 /* Debug */,
+				D2C6F51E2B76914500F9FBB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

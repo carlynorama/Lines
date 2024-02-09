@@ -11,10 +11,13 @@ struct ContentView: View {
     @State var myLines = Lines()
     
     var body: some View {
-        List(myLines) { line in
-            Link(line.string, destination: line.url)
+        AdaptiveLayout {
+            List(myLines) { line in
+                Link(line.string, destination: line.url)
+            }
+            .padding()
+            ExtensionInfoView()
         }
-        .padding()
     }
 }
 
