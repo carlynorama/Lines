@@ -9,7 +9,7 @@ import Foundation
 
 
 class LineStore:ObservableObject {
-    private(set) var lines:Lines
+    @Published private(set) var lines:Lines
     
     init(lines: Lines) {
         self.lines = lines
