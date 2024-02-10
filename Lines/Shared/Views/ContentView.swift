@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var myLines = LineStore(lines: Lines())
-    
+    @ObservedObject var myLines = LinesVM(lines: Lines())
+    @State var statusText = ""
     
     
     var body: some View {
@@ -18,14 +18,19 @@ struct ContentView: View {
                 List(myLines.lines) { line in
                     Link(line.string, destination: line.url)
                 }
-                
+                Text(statusText)
                 PasteButton(payloadType: String.self) { strings in
-                    guard let first = strings.first else { return }
-                    myLines.append(possibleLine: first)
+                    Task {
+                        statusText = await myLines.updateOrWarn(input: strings.first)
+                    }
                 }.buttonBorderShape(.capsule)
             }
             ExtensionInfoView().environmentObject(myLines)
         }.padding()
+    }
+    
+    func updateOrWarn(input:String?, statusLocation:Binding<String>) {
+
     }
 }
 

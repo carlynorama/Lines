@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ExtensionInfoView: View {
     let extensionInfo = ExtensionManager()
-    @EnvironmentObject var lines:LineStore
-    @State var statusMessage = ""
+    @EnvironmentObject var myLines:LinesVM
+    @State var statusText = ""
     var body: some View {
         VStack {
 #if os(macOS)
@@ -18,7 +18,7 @@ struct ExtensionInfoView: View {
 #else
             iOSExtInfoView().environmentObject(extensionInfo)
 #endif
-            Text(statusMessage)
+            Text(statusText)
             Button("Load Latest") {
                 loadLatest()
             }
@@ -26,15 +26,14 @@ struct ExtensionInfoView: View {
     }
     
     func loadLatest() {
-        print("checking lines")
-        
-        let newMessage = extensionInfo.getExtensionMessage()
-        print(newMessage, extensionInfo.extensionMessageService.fromExtensionKey)
-        if newMessage != nil {
-            lines.append(possibleLine:newMessage!)
-            print("added line")
+        statusText = "checking for lines..."
+        Task {
+            statusText = await myLines.updateOrWarn(input: extensionInfo.getExtensionMessage())
         }
     }
+    
+    
+    
     
 }
 

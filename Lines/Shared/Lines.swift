@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Line:Identifiable, Hashable {
+struct Line:Identifiable, Hashable, Codable, Sendable {
 
     var id:String {
         "\(string)\(urlString)"
