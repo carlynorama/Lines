@@ -35,5 +35,5 @@
         }
     },
 
-    "permissions": [ "activeTab", "scripting",  "clipboardWrite", "storage"]
+    "permissions": [ "activeTab", "scripting",  "clipboardWrite", "storage", "nativeMessaging"]
 }

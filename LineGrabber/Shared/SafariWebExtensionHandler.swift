@@ -8,7 +8,10 @@
 import SafariServices
 import os.log
 
+//Handles Requests From Safari
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
+    
+
 
     func beginRequest(with context: NSExtensionContext) {
         let request = context.inputItems.first as? NSExtensionItem
