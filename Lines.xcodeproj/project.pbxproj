@@ -391,6 +391,8 @@
 				D2C6F5092B76913A00F9FBB1 /* PBXTargetDependency */,
 			);
 			name = "Lines (macOS)";
+			packageProductDependencies = (
+			);
 			productName = Lines;
 			productReference = D2C6F4A92B767DA300F9FBB1 /* Lines.app */;
 			productType = "com.apple.product-type.application";
@@ -446,6 +448,8 @@
 				D2C6F5402B76AE5000F9FBB1 /* PBXTargetDependency */,
 			);
 			name = "Lines (iOS)";
+			packageProductDependencies = (
+			);
 			productName = Lines;
 			productReference = D2C6F4E92B76909300F9FBB1 /* Lines.app */;
 			productType = "com.apple.product-type.application";

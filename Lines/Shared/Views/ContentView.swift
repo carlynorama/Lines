@@ -11,20 +11,22 @@ struct ContentView: View {
     @State var myLines = Lines()
     
     var body: some View {
-        AdaptiveLayout {
+        AdaptiveLayout(spacing:10) {
             VStack {
                 List(myLines) { line in
                     Link(line.string, destination: line.url)
                 }
-                PasteButton(payloadType: String.self) { strings in
-                    guard let first = strings.first else { return }
-                    myLines.append(possibleLine: first)
+                HStack {
+                    
+                    PasteButton(payloadType: String.self) { strings in
+                        guard let first = strings.first else { return }
+                        myLines.append(possibleLine: first)
+                    }
+                    .buttonBorderShape(.capsule)
                 }
-                .buttonBorderShape(.capsule)
             }
-            .padding()
             ExtensionInfoView()
-        }
+        }.padding()
     }
 }
 

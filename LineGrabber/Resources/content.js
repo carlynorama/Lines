@@ -21,9 +21,7 @@ function updateClipboard(newClip) {
     );
 }
 
-
-var copyable = Array.from(document.getElementsByTagName('p'))
-.concat(Array.from(document.getElementsByTagName('li')));
+var copyable = Array.from(document.getElementsByTagName('p')).concat(Array.from(document.getElementsByTagName('li')));
 
 for( var i = 0; i < copyable.length; ++i ) {
     copyable[i].onclick = function() {
@@ -31,7 +29,27 @@ for( var i = 0; i < copyable.length; ++i ) {
         //strings friendly use .innerHTML or .innerText
         let text = this.textContent; //.innerHTML;
         let url = document.location.href;
-        updateClipboard(text + "|" + url);
+        let formatted = text + "|" + url;
+        updateClipboard(formatted);
+        notifyBackgroundPage(formatted);
     }
 }
 
+//------------------------------------------------------------ NOTIFY BACKGROUND
+//https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/sendMessage
+
+function handleResponse(message) {
+    console.log(`Message from the background script: ${message}`);
+  }
+  
+  function handleError(error) {
+    console.log(`Error: ${error}`);
+  }
+  
+  function notifyBackgroundPage(message) {
+    const sending = browser.runtime.sendMessage({
+      greeting: "newClip",
+      message: message
+    });
+    sending//.then(handleResponse, handleError);
+  }
