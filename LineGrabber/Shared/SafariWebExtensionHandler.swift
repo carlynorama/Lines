@@ -12,10 +12,29 @@ import os.log
 //Handles Requests From Safari
 class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     
+    let shellMessageService = AppGroupService(appGroupID: AppGroupSettings.id)!
+    
+    func setMessageForApp(_ message:String) {
+        shellMessageService.setToNativeMessage(to: message)
+    }
+    
+    func confirmMessageForApp() -> String {
+        shellMessageService.getFromExtensionMessage() ?? "No Message"
+    }
+    
+    var udKey:String {
+        shellMessageService.fromExtensionKey
+    }
+    
     func beginRequest(with context: NSExtensionContext) {
+        var responseContent: [ String : Any ] = [ : ]
+        defer {
+            let response = NSExtensionItem()
+            response.userInfo = [ SFExtensionMessageKey: responseContent ]
+            context.completeRequest(returningItems: [ response ], completionHandler: nil)
+        }
         
-        print("Hello?") //DO NOT SEE THIS IN DEBUG
-        
+        print("Hello?") //NOT DEBUG B/C THIS IS NOT OUR CONTEXT.
         
         let helloContext = context.classDescription
         os_log(.default, "Tell me about the context %@", String(describing: helloContext))
@@ -43,20 +62,15 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
 
         os_log(.default, "Received message from browser.runtime.sendNativeMessage: %@ (profile: %@)", String(describing: message), profile?.uuidString ?? "none")
         
-        let response = NSExtensionItem()
-        
-        if let _ = request?.userInfo?["isClip"] {
-            response.userInfo = [ SFExtensionMessageKey: [ "receivedClip": "true" ] ]
+        if let messageDictionary = message as? Dictionary<String,String> {
+            if let _ = messageDictionary["isClip"] {
+                responseContent["receivedClip"] = "true"
+                setMessageForApp(messageDictionary["message"]!)
+                responseContent["updatedUDAT"] = udKey
+            }
         }
         
-        
-        if let myMessage = message as? String, myMessage.contains("|") {
-            response.userInfo = [ SFExtensionMessageKey: [ "echoClip": myMessage ] ]
-        } else {
-            response.userInfo = [ SFExtensionMessageKey: [ "echo": message ] ]
-        }
-
-        context.completeRequest(returningItems: [ response ], completionHandler: nil)
+        responseContent["echo"] = message
     }
 
 }

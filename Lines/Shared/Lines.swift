@@ -76,7 +76,7 @@ struct Lines:RandomAccessCollection, ExpressibleByArrayLiteral {
     }
     
     mutating
-    func append(possibleLine:String) {
+    public func append(possibleLine:String) {
         if let newLine = Line(knownFormatString: possibleLine) {
             self.values.append(newLine)
         }
