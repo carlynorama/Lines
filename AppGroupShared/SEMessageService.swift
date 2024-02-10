@@ -19,7 +19,11 @@ protocol SEMessageService {
 }
 
 enum AppGroupSettings {
-    static let id = "KH3G9PXA68.carlynorama.lines"
+#if os(macOS)
+    static let id = "KH3G9PXA68.com.carlynorama.lines"
+#else
+    static let id = "group.com.carlynorama.safariextensionland"
+#endif
 }
 
 
@@ -28,6 +32,14 @@ struct AppGroupService {
     private let appGroupID: String
     private let userDefaults: UserDefaults
     
+    //
+    var containerURL:URL? {
+        FileManager.default.containerURL(forSecurityApplicationGroupIdentifier:appGroupID)
+    }
+    
+    private func dumpUserDefaults() {
+        print(userDefaults.dictionaryRepresentation())
+    }
     
     private func stringForKey(_ key:some StringProtocol) -> String? {
         userDefaults.string(forKey: key as! String) //as? String
@@ -77,7 +89,15 @@ extension AppGroupService:SEMessageService {
     }
     
     func getFromExtensionMessage() -> String? {
-        stringForKey(fromExtensionKey)
+        setString("test", forKey: fromNativeKey)
+        print(userDefaults.string(forKey:fromExtensionKey))
+        print(userDefaults.string(forKey: fromNativeKey))
+        print(containerURL)
+        //print(userDefaults.attributeKeys)
+        print(userDefaults)
+        
+        
+        return stringForKey(fromExtensionKey)
     }
     
     func setToNativeMessage(to message: some StringProtocol) {

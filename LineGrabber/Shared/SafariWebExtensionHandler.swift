@@ -36,8 +36,8 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         
         print("Hello?") //NOT DEBUG B/C THIS IS NOT OUR CONTEXT.
         
-        let helloContext = context.classDescription
-        os_log(.default, "Tell me about the context %@", String(describing: helloContext))
+        //let helloContext = context.classDescription
+        //os_log(.default, "Tell me about the context %@", String(describing: helloContext))
         
         let request = context.inputItems.first as? NSExtensionItem
 
@@ -66,10 +66,10 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
             if let _ = messageDictionary["isClip"] {
                 responseContent["receivedClip"] = "true"
                 setMessageForApp(messageDictionary["message"]!)
-                responseContent["updatedUDAT"] = udKey
+                responseContent["updatedForKey"] = udKey
+                responseContent["updatedWith"] = confirmMessageForApp()
             }
         }
-        
         responseContent["echo"] = message
     }
 

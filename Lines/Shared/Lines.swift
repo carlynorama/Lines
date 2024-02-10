@@ -41,9 +41,6 @@ struct Line:Identifiable, Hashable, Codable, Sendable {
     var url:URL {
         URL(string: urlString)!
     }
-    
-
-
 }
 
 
@@ -77,9 +74,7 @@ struct Lines:RandomAccessCollection, ExpressibleByArrayLiteral {
     
     mutating
     public func append(possibleLine:String) {
-        print(possibleLine)
         if let newLine = Line(knownFormatString: possibleLine) {
-            print(newLine)
             self.values.append(newLine)
         }
     }
