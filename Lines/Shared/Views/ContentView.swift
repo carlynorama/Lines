@@ -8,25 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var myLines = Lines()
+    @ObservedObject var myLines = LinesVM(lines: Lines())
+    @State var statusText = ""
+    
     
     var body: some View {
         AdaptiveLayout(spacing:10) {
             VStack {
-                List(myLines) { line in
+                List(myLines.lines) { line in
                     Link(line.string, destination: line.url)
                 }
-                HStack {
-                    
-                    PasteButton(payloadType: String.self) { strings in
-                        guard let first = strings.first else { return }
-                        myLines.append(possibleLine: first)
+                Text(statusText)
+                PasteButton(payloadType: String.self) { strings in
+                    Task {
+                        statusText = await myLines.updateOrWarn(input: strings.first)
                     }
-                    .buttonBorderShape(.capsule)
-                }
+                }.buttonBorderShape(.capsule)
             }
-            ExtensionInfoView()
+            ExtensionInfoView().environmentObject(myLines)
         }.padding()
+    }
+    
+    func updateOrWarn(input:String?, statusLocation:Binding<String>) {
+
     }
 }
 

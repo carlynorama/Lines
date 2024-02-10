@@ -14,6 +14,15 @@ import os.log
 
 
 class ExtensionManager:ObservableObject {
+    
+    let extensionMessageService:SEMessageService = AppGroupService(appGroupID: AppGroupSettings.id)!
+    
+    func getExtensionMessage() -> String? {
+        //"Not active."
+        extensionMessageService.getFromExtensionMessage()
+    }
+
+    
 #if os(macOS)
     var isEnabled = false
     func setExtensionStatus() async {

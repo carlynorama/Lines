@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D26902842B77D1C4008CBCA8 /* SEMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26902832B77D1C4008CBCA8 /* SEMessageService.swift */; };
+		D26902852B77D1C4008CBCA8 /* SEMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26902832B77D1C4008CBCA8 /* SEMessageService.swift */; };
+		D26902862B77D1C4008CBCA8 /* SEMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26902832B77D1C4008CBCA8 /* SEMessageService.swift */; };
+		D26902872B77D1C4008CBCA8 /* SEMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26902832B77D1C4008CBCA8 /* SEMessageService.swift */; };
+		D2B6E3482B77E59D0029CC48 /* LinesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6E3472B77E59D0029CC48 /* LinesVM.swift */; };
+		D2B6E3492B77E59D0029CC48 /* LinesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6E3472B77E59D0029CC48 /* LinesVM.swift */; };
 		D2C6F4AD2B767DA300F9FBB1 /* LinesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4AC2B767DA300F9FBB1 /* LinesApp.swift */; };
 		D2C6F4AF2B767DA300F9FBB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4AE2B767DA300F9FBB1 /* ContentView.swift */; };
 		D2C6F4B12B767DA400F9FBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C6F4B02B767DA400F9FBB1 /* Assets.xcassets */; };
@@ -113,7 +119,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D26902832B77D1C4008CBCA8 /* SEMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEMessageService.swift; sourceTree = "<group>"; };
 		D2B3E39B2B76E8DB0096990E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D2B6E3472B77E59D0029CC48 /* LinesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesVM.swift; sourceTree = "<group>"; };
 		D2C6F4A92B767DA300F9FBB1 /* Lines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C6F4AC2B767DA300F9FBB1 /* LinesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesApp.swift; sourceTree = "<group>"; };
 		D2C6F4AE2B767DA300F9FBB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -210,10 +218,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D26902822B77D176008CBCA8 /* AppGroupShared */ = {
+			isa = PBXGroup;
+			children = (
+				D26902832B77D1C4008CBCA8 /* SEMessageService.swift */,
+			);
+			path = AppGroupShared;
+			sourceTree = "<group>";
+		};
 		D2C6F4A02B767DA300F9FBB1 = {
 			isa = PBXGroup;
 			children = (
 				D2B3E39B2B76E8DB0096990E /* README.md */,
+				D26902822B77D176008CBCA8 /* AppGroupShared */,
 				D2C6F4AB2B767DA300F9FBB1 /* Lines */,
 				D2C6F4BD2B767DA400F9FBB1 /* LinesTests */,
 				D2C6F4C72B767DA400F9FBB1 /* LinesUITests */,
@@ -353,6 +370,7 @@
 				D2C6F4DA2B7680EC00F9FBB1 /* Lines.swift */,
 				D2C6F5242B76A46B00F9FBB1 /* Constants.swift */,
 				D2C6F5352B76A8C000F9FBB1 /* ExtensionManager.swift */,
+				D2B6E3472B77E59D0029CC48 /* LinesVM.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -613,8 +631,10 @@
 				D2C6F4AD2B767DA300F9FBB1 /* LinesApp.swift in Sources */,
 				D2C6F5332B76A82500F9FBB1 /* ExtensionInfoView.swift in Sources */,
 				D2C6F5362B76A8C000F9FBB1 /* ExtensionManager.swift in Sources */,
+				D26902842B77D1C4008CBCA8 /* SEMessageService.swift in Sources */,
 				D2C6F4DB2B7680EC00F9FBB1 /* Lines.swift in Sources */,
 				D2C6F52A2B76A51600F9FBB1 /* AdaptiveLayout.swift in Sources */,
+				D2B6E3482B77E59D0029CC48 /* LinesVM.swift in Sources */,
 				D2C6F5392B76A98D00F9FBB1 /* macExtInfoView.swift in Sources */,
 				D2C6F5252B76A46B00F9FBB1 /* Constants.swift in Sources */,
 			);
@@ -645,8 +665,10 @@
 				D2C6F4DF2B76909300F9FBB1 /* LinesApp.swift in Sources */,
 				D2C6F4E02B76909300F9FBB1 /* Lines.swift in Sources */,
 				D2C6F5342B76A87100F9FBB1 /* ExtensionInfoView.swift in Sources */,
+				D26902862B77D1C4008CBCA8 /* SEMessageService.swift in Sources */,
 				D2C6F52B2B76A51600F9FBB1 /* AdaptiveLayout.swift in Sources */,
 				D2C6F53B2B76A99A00F9FBB1 /* iOSExtInfoView.swift in Sources */,
+				D2B6E3492B77E59D0029CC48 /* LinesVM.swift in Sources */,
 				D2C6F5372B76A8C000F9FBB1 /* ExtensionManager.swift in Sources */,
 				D2C6F53C2B76AAAD00F9FBB1 /* Constants.swift in Sources */,
 			);
@@ -657,6 +679,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C6F52D2B76A53F00F9FBB1 /* LineGrabberError.swift in Sources */,
+				D26902852B77D1C4008CBCA8 /* SEMessageService.swift in Sources */,
 				D2C6F4F42B76913A00F9FBB1 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,6 +689,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C6F52E2B76A53F00F9FBB1 /* LineGrabberError.swift in Sources */,
+				D26902872B77D1C4008CBCA8 /* SEMessageService.swift in Sources */,
 				D2C6F5112B76914500F9FBB1 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

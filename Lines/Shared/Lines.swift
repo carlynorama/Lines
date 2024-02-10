@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Line:Identifiable, Hashable {
+struct Line:Identifiable, Hashable, Codable, Sendable {
 
     var id:String {
         "\(string)\(urlString)"
@@ -41,9 +41,6 @@ struct Line:Identifiable, Hashable {
     var url:URL {
         URL(string: urlString)!
     }
-    
-
-
 }
 
 
@@ -76,7 +73,7 @@ struct Lines:RandomAccessCollection, ExpressibleByArrayLiteral {
     }
     
     mutating
-    func append(possibleLine:String) {
+    public func append(possibleLine:String) {
         if let newLine = Line(knownFormatString: possibleLine) {
             self.values.append(newLine)
         }
