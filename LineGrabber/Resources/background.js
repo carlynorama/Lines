@@ -36,22 +36,27 @@ console.log("hello from background.js")
 
 //https://developer.apple.com/documentation/safariservices/safari_web_extensions/messaging_a_web_extension_s_native_app
 //Use runtime.onMessageExternal to talk to other extensions or websites
-browser.runtime.sendNativeMessage("application.id", {message: "Hello from background page"}, function(response) {
     console.log("Received sendNativeMessage response:");
     console.log(response);
 });
 
 // Set up a connection to receive messages from the native app.
-let port = browser.runtime.connectNative("application.id");
-port.postMessage("Hello from JavaScript Port");
-port.onMessage.addListener(function(message) {
+
+var messageHandler = (message) => {
     console.log("Received native port message:");
     console.log(message);
-});
+}
+let port = browser.runtime.connectNative("application.id");
+port.postMessage("Hello from JavaScript Port");
 
-port.onDisconnect.addListener(function(disconnectedPort) {
+port.onMessage.addListener(messageHandler);
+
+port.onDisconnect.addListener((p) => {
     console.log("Received native port disconnect:");
-    console.log(disconnectedPort);
+    console.log(p);
+    if (p.error) {  //runtime.lastError in chrome
+        console.log(`Disconnected due to an error: ${p.error.message}`);
+    }
 });
 
 

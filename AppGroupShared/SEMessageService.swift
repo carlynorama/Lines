@@ -9,13 +9,12 @@ import Foundation
 
 protocol SEMessageService {
     var fromExtensionKey: String { get }
-    var fromNativeKey: String { get }
+    var fromShellKey: String { get }
     
-    func setToExtensionMessage(to:some StringProtocol)
+    func setFromExtensionMessage(to:some StringProtocol)
     func getFromExtensionMessage() -> String?
-    func clearFromExtensionMessage()
-    func setToNativeMessage(to:some StringProtocol)
-    func getFromNativeMessage() -> String?
+    func setFromShellMessage(to:some StringProtocol)
+    func getFromShellMessage() -> String?
 }
 
 enum AppGroupSettings {
@@ -32,7 +31,6 @@ struct AppGroupService {
     private let appGroupID: String
     private let userDefaults: UserDefaults
     
-    //
     var containerURL:URL? {
         FileManager.default.containerURL(forSecurityApplicationGroupIdentifier:appGroupID)
     }
@@ -77,11 +75,11 @@ extension AppGroupService:SEMessageService {
 
     
     var fromExtensionKey:String { "toShell" }
-    var fromNativeKey:String { "toExtension" }
+    var fromShellKey:String { "toExtension" }
     
 
-    func setToExtensionMessage(to message: some StringProtocol) {
-        setString(message, forKey:fromNativeKey)
+    func setFromExtensionMessage(to message: some StringProtocol) {
+        setString(message, forKey:fromExtensionKey)
     }
     
     func clearFromExtensionMessage() {
@@ -89,23 +87,16 @@ extension AppGroupService:SEMessageService {
     }
     
     func getFromExtensionMessage() -> String? {
-        setString("test", forKey: fromNativeKey)
-        print(userDefaults.string(forKey:fromExtensionKey))
-        print(userDefaults.string(forKey: fromNativeKey))
-        print(containerURL)
-        //print(userDefaults.attributeKeys)
-        print(userDefaults)
-        
-        
+        setString("test", forKey: fromShellKey)
         return stringForKey(fromExtensionKey)
     }
     
-    func setToNativeMessage(to message: some StringProtocol) {
-        setString(message, forKey:fromExtensionKey)
+    func setFromShellMessage(to message: some StringProtocol) {
+        setString(message, forKey:fromShellKey)
     }
     
-    func getFromNativeMessage() -> String? {
-        stringForKey(fromNativeKey)
+    func getFromShellMessage() -> String? {
+        stringForKey(fromShellKey)
     }
     
 }

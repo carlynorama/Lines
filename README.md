@@ -1,5 +1,9 @@
 #  Lines
 
+See https://www.whynotestflight.com/excuses/what-if-i-just-copy-paste-from-the-web/
+
+First article in series.
+
 
 ### What is a NSExtensionContext
 
@@ -20,3 +24,7 @@ The host app context from which an app extension is invoked. In this case Safari
 - https://developer.apple.com/documentation/bundleresources/information_property_list/nsextension/nsextensionattributes/nsextensionactivationrule
 
 - Older tutorial, provides context: https://www.hackingwithswift.com/read/19/3/adding-an-extension-nsextensionitem
+
+- AppGroups
+    - https://developer.apple.com/forums/thread/721701
+    - https://developer.apple.com/documentation/xcode/configuring-app-groups

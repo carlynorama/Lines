@@ -15,7 +15,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     let shellMessageService = AppGroupService(appGroupID: AppGroupSettings.id)!
     
     func setMessageForApp(_ message:String) {
-        shellMessageService.setToNativeMessage(to: message)
+        shellMessageService.setFromExtensionMessage(to: message)
     }
     
     func confirmMessageForApp() -> String {
@@ -34,10 +34,7 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
             context.completeRequest(returningItems: [ response ], completionHandler: nil)
         }
         
-        print("Hello?") //NOT DEBUG B/C THIS IS NOT OUR CONTEXT.
-        
-        //let helloContext = context.classDescription
-        //os_log(.default, "Tell me about the context %@", String(describing: helloContext))
+        print("Hello?") //NOT SEEN DEBUG B/C THIS IS NOT OUR CONTEXT.
         
         let request = context.inputItems.first as? NSExtensionItem
 
@@ -56,9 +53,6 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         } else {
             message = request?.userInfo?["message"]
         }
-        
-        //request?.attachments //NSProvider, can scan for type (Image, etc)
-        //request?.attributedContentText
 
         os_log(.default, "Received message from browser.runtime.sendNativeMessage: %@ (profile: %@)", String(describing: message), profile?.uuidString ?? "none")
         
